@@ -432,6 +432,16 @@ section {
     gap: 15px;
 }
 
+#publications {
+  padding: 50px;
+}
+
+.publication-card {
+  background: #1e1e1e;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
 /* Certifications */
 .cert-grid {
     display: grid;
