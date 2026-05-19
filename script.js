@@ -2,7 +2,6 @@
 var typed = new Typed(".typing", {
     strings: [
         "Python Developer",
-        "AI/ML Enthusiast",
         "Software Tester",
         "Backend Developer",
         "IT Student"
