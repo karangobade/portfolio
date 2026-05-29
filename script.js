@@ -46,6 +46,7 @@ document.querySelectorAll('section').forEach(sec => {
 // Form Submit
 function handleSubmit(e) {
     e.preventDefault();
+    
     alert('Thank you for your message! I will get back to you soon.');
     e.target.reset();
 }
