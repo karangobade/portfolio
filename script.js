@@ -44,12 +44,49 @@ document.querySelectorAll('section').forEach(sec => {
 });
 
 // Form Submit
+const FORM_ENDPOINT = "https://formspree.io/f/xwvgeorz";
+ 
 function handleSubmit(e) {
     e.preventDefault();
-    
-    alert('Thank you for your message! I will get back to you soon.');
-    e.target.reset();
+ 
+    const form = e.target;
+    const submitBtn = document.getElementById('submitBtn');
+    const status = document.getElementById('formStatus');
+    const originalBtnText = submitBtn.innerHTML;
+ 
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Sending...';
+    status.textContent = '';
+    status.style.color = '';
+ 
+    fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+        if (response.ok) {
+            status.textContent = 'Thank you! Your message has been sent. I will get back to you soon.';
+            status.style.color = '#22c55e';
+            form.reset();
+        } else {
+            response.json().then(data => {
+                status.textContent = (data.errors && data.errors.map(e => e.message).join(', ')) ||
+                    'Something went wrong. Please try again or email me directly.';
+                status.style.color = '#ef4444';
+            });
+        }
+    })
+    .catch(() => {
+        status.textContent = 'Network error. Please try again or email me directly.';
+        status.style.color = '#ef4444';
+    })
+    .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+    });
 }
+ 
 
 // Navbar shadow on scroll
 window.addEventListener('scroll', () => {
