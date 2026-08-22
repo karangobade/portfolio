@@ -20,6 +20,8 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#experience">Internship</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="hamburger">
@@ -418,49 +420,40 @@
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="experience">
-        <h2 class="section-title">Internship <span>Experience</span></h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-icon"><i class="fas fa-shield-alt"></i></div>
-                <div class="timeline-content">
-                    <h3>Virtual Internship - Fortinet</h3>
-                    <span class="date">Jan 2024 – Mar 2024</span>
-                    <ul>
-                        <li>Gained foundational knowledge in cybersecurity & network security</li>
-                        <li>Worked on simulated real-world security scenarios</li>
-                        <li>Learned about threat detection and mitigation strategies</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-icon"><i class="fab fa-python"></i></div>
-                <div class="timeline-content">
-                    <h3>Python Full Stack Developer-EduSkills Academy</h3>
-                    <span class="date">Apr 2026 – Jun 2026</span>
-                    <ul>
-                        <li>Completed intensive Python Full Stack Development program covering Flask, FastAPI, REST APIs, and frontend integration.</li>
-                        <li>Built and deployed web applications using Python backend with HTML/CSS/JS frontend.</li>
-                        <li>Gained experience with database design using MySQL and MongoDB.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-icon"><i class="fab fa-python"></i></div>
-                <div class="timeline-content">
-                    <h3>Python Development Intern-QSkill (Squarcell Resource India)</h3>
-                    <span class="date">July 2026 – Aug 2026 (1 month, Remote)Ongoing</span>
-                    <p>Selected for a virtual Python Development internship focused on hands-on skill building. Worked on real-world project implementations involving web development, data analysis, and API integration.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="exp-section" id="experience">
+  <h2 class="exp-title">Internship <span class="accent">Experience</span></h2>
+  <div class="exp-list" id="expList"></div>
+</section>
+ 
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <img id="modalImg" class="modal-img" src="" alt="" />
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p id="modalIssuer" class="modal-issuer"></p>
+      <p id="modalDesc" class="modal-desc"></p>
+    </div>
+  </div>
+</div>
+
+    <section class="gallery-section" id="gallery">
+  <h2 class="gallery-title">My <span class="accent">Gallery</span></h2>
+  <p class="gallery-sub">Certificates &amp; achievements — click any card for details</p>
+  <div class="gallery-grid" id="galleryGrid"></div>
+</section>
+
+    <div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <img id="modalImg" class="modal-img" src="" alt="" />
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p id="modalIssuer" class="modal-issuer"></p>
+      <p id="modalDesc" class="modal-desc"></p>
+    </div>
+  </div>
+</div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
