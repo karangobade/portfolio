@@ -248,11 +248,29 @@ window.addEventListener('scroll', () => {
       img: "assets/gallery/python_full.jpg",
       desc: "Python Full Stack Internship (EduSkills Academy) — 10-week comprehensive program covering responsive frontend design (HTML, CSS, Bootstrap, JavaScript/DOM), backend development with Python and Django, SQL database querying, and Git version control.."
     },
-        {
+    {
       title: "Python Development Intern",
       issuer: "QSkill",
       img: "assets/gallery/qskill-offer.jpg",
       desc: "Completed a 1-month virtual Python Development internship focused on hands-on skill building and real-world project implementation.Built a Flask-based sentiment analysis web application integrated with TextBlob for text classification"
+    },
+    {
+      title: "SECURELINE Publications-1 ",
+      issuer: "IJIRT",
+      img: "assets/gallery/pub_2.jpg",
+      desc: "SECURELINE: END-TO-END ENCRYPTED PEER-TO-PEER MESSAGING AND FILE SHARING SYSTEM Published in International Journal of Innovative Research in Technology (IJIRT) (www.ijirt.org) ISSN 2349-6002 & Impact Factor 8.017 Published in Volume 12 Issue 10, March 2026 Registration ID 193723Completed a 1-month virtual Python Development internship focused on hands-on skill building and real-world project implementation.Built a Flask-based sentiment analysis web application integrated with TextBlob for text classification"
+    },
+    {
+      title: "SECURELINE Publications-2",
+      issuer: "IRJMETS",
+      img: "assets/gallery/pub_1.jpg",
+      desc: "SECURELINE:IMPLEMENTATION AND PERFORMANCE ANALYSIS OF A SECURE PEER-TO-PEER MESSAGING AND FILE SHARING SYSTEM” in International Research Journal of Modernization in Engineering Technology and Science (IRJMETS), Volume 08, Issue 04, April 2026"
+    },
+    {
+      title: "Digital Productivity ",
+      issuer: "(NIIT Foundation / YuWaah! / UNICEF)",
+      img: "assets/gallery/digital.jpg",
+      desc: "Workplace digital literacy, essential office software productivity tools, digital collaboration, and workflow optimization."
     },
   ];
 
